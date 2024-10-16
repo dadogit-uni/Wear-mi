@@ -1,0 +1,208 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #668394;
+    color: #ffffff;
+    /* padding: 15px; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+    /* background-color: ; */
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 130%;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+h1{
+    margin: 35px 0 15px;
+}
+
+h2{
+    /* margin: 30px auto; */
+    background-color: hsl(322, 21%, 34%);
+    padding: 30px;
+    margin: 40px auto;
+    color: white;
+}
+
+.products {
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.favorite-btn .favorited {
+    color: red;
+}
+
+
+.product-info h3 {
+    margin: 10px 0;
+}
+
+.price-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.fav-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #f00;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(321, 78%, 58%);
+    color: #fff;
+    margin-top: 50px;
+}
+/* .burger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white; 
+    z-index: 1001; 
+} */
+
+/* When the nav is active (on mobile), display the links */
+.nav-active {
+    display: flex;
+    flex-direction: column;
+    background-color: #668394; /* Adjust background color if needed */
+    position: absolute;
+    top: 60px; /* Adjust this to the height of your header */
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.about{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #668394;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .burger {
+        display: block; /* Ensure it's visible on mobile */
+    }
+
+    .nav-active {
+        display: flex; /* Show the links when active */
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

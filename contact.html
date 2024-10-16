@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wear-mi | Contact</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .contact {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .contact-info h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .contact-item h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .contact-item p {
+            font-size: 16px;
+        }
+
+        .contact-form {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+               background-color: hsl(322, 21%, 34%);
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            .contact-details {
+                flex-direction: column;
+            }
+
+            .contact-item {
+                border-bottom: none;
+                margin-bottom: 20px;
+                padding-bottom: 0;
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: #f7f7f7;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 93%;
+            margin: 10px auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: hsl(321, 46%, 49%);
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: hsl(321, 86%, 61%);
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        /* Mobile Responsiveness for Contact Form */
+        @media (max-width: 768px) {
+            .contact-form {
+                width: 80%;
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Wear-mi</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+       <!-- Contact Page Content -->
+       <main class="contact">
+        <section class="contact-info">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Whether you have a question about our services, need support, or just want to say hello, feel free to reach out to us using the contact form below or through the contact details provided.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@wearmi.com">info@wearmi.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>+961 71 280989</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>Kfarnabrakh Street, Brih, Lebanon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="mailto:saidalali3@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wear-mi. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
